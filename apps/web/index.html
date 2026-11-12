@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>H4 MultiChat Business · Demonstração</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <div class="brand"><span class="brand-icon">H4</span><span>MultiChat <small>BUSINESS</small></span></div>
+      <div class="workspace-label">ESPAÇO DE TRABALHO</div>
+      <div class="workspace"><span class="workspace-avatar">D</span><span>Empresa Demo <small>Ambiente de testes</small></span></div>
+      <nav><a class="nav-item active" href="#conversas">▣ <span>Conversas</span></a><a class="nav-item disabled" aria-disabled="true" href="#">◈ <span>Contatos · em breve</span></a><a class="nav-item disabled" aria-disabled="true" href="#">⚙ <span>Configurações · em breve</span></a></nav>
+      <div class="sidebar-bottom"><span class="status-dot"></span> Demo local · sem conexão real <small>Não inserir dados pessoais</small></div>
+    </aside>
+    <main class="main" id="conversas">
+      <header class="topbar"><div><h1>Caixa de entrada</h1><p>Todos os números em um só lugar</p></div><div class="top-actions"><span class="demo-chip">PRÉ-MVP · DEMO</span><button type="button" id="refresh" class="secondary-btn">Atualizar</button></div></header>
+      <section class="layout" aria-label="Painel de conversas">
+        <div class="inbox-pane">
+          <div class="section-header"><h2>Conversas</h2><span id="thread-count" class="counter">0</span></div>
+          <label class="sr-only" for="search">Buscar conversas</label><input id="search" class="search" placeholder="Buscar contato ou mensagem..." autocomplete="off" />
+          <div class="account-filter"><span class="filter-label">NÚMEROS CONECTADOS (SIMULAÇÃO)</span><div id="account-buttons" class="filter-buttons"></div></div>
+          <div id="thread-list" class="thread-list" aria-live="polite"></div>
+        </div>
+        <div class="conversation-pane">
+          <div class="chat-header"><div class="chat-avatar" id="chat-avatar">?</div><div><h2 id="chat-contact">Selecione uma conversa</h2><p id="chat-account">Ambiente demonstrativo</p></div></div>
+          <div class="chat-body" id="chat-body" aria-live="polite"><div class="empty-chat">Selecione uma conversa para visualizar as mensagens.</div></div>
+          <form id="message-form" class="compose"><label class="sr-only" for="message">Mensagem fictícia</label><input id="message" name="message" placeholder="Digite uma resposta de demonstração" maxlength="4096" disabled /><button id="send" type="submit" disabled>Enviar ↗</button></form>
+          <div class="compose-note">As respostas são apenas simuladas. Nenhuma mensagem é enviada pelo WhatsApp.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

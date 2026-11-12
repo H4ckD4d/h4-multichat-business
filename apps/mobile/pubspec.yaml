@@ -1,0 +1,11 @@
+name: h4_multichat_business
+version: 0.1.0+1
+description: Protótipo visual do H4 MultiChat Business (dados fictícios).
+publish_to: none
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+flutter:
+  uses-material-design: true
