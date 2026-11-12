@@ -1,5 +1,8 @@
 # Instruções para Codex — H4 MultiChat Business
 
+**Créditos e autoria do projeto:** Chris Cruz — [@H4ckD4d](https://github.com/H4ckD4d), concepção, direção técnica e desenvolvimento. Preserve estes créditos no README, na documentação e nas interfaces.
+
+
 ## Objetivo
 Implementar MVP SaaS para gerenciar múltiplos números **empresariais autorizados** do WhatsApp por meio da Cloud API oficial da Meta, com clientes macOS, Android e iOS.
 
