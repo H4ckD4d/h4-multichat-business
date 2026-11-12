@@ -45,6 +45,16 @@ class _InboxDemoPageState extends State<InboxDemoPage> {
       appBar: AppBar(title: const Text('H4 MultiChat'), actions: const [
         Padding(padding: EdgeInsets.all(12), child: Center(child: Text('DEMO', style: TextStyle(fontSize: 12)))),
       ]),
+      bottomNavigationBar: const SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          child: Text(
+            'Criado por @h4ckd4d · Chris Cruz | Protótipo pré-MVP',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 11, color: Colors.grey),
+          ),
+        ),
+      ),
       body: Column(children: [
         const MaterialBanner(content: Text('Protótipo visual: nenhuma mensagem real é enviada ou recebida.'), actions: [SizedBox.shrink()]),
         Padding(padding: const EdgeInsets.all(16), child: TextField(
